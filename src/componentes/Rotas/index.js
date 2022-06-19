@@ -10,8 +10,8 @@ function Rotas() {
         <BrowserRouter>
             <Routes>
                 <Route exact path='/' element={<HomePage />} />
-                <Route path='/portfolio' element={<Sobre />} />
-                <Route path='/curriculo' element={<Contato />} />
+                <Route path='/sobre' element={<Sobre />} />
+                <Route path='/contato' element={<Contato />} />
             </Routes>
         </BrowserRouter>
     );

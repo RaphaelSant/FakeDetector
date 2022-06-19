@@ -1,39 +1,33 @@
 import React from "react";
+import './navbar.css';
+import Logo from '../../assets/Imagens/Logo.png';
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="https://www.google.com">Navbar</a>
+        <nav className="navbar navbar-expand-lg navbar-light bg-fk">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="https://www.google.com">Home <span className="sr-only">(current)</span></a>
+            <div className="collapse navbar-collapse container-navbar" id="navbarSupportedContent">
+                <ul className="navbar-nav fk-navbar">
+                    <li className="nav-item fk-link">
+                        <Link to="/" className="nav-link">INÍCIO</Link>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="https://www.google.com">Link</a>
+                    <li className="nav-item fk-link">
+                        <Link to="/sobre" className="nav-link">SOBRE</Link>
                     </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="https://www.google.com" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a className="dropdown-item" href="https://www.google.com">Action</a>
-                            <a className="dropdown-item" href="https://www.google.com">Another action</a>
-                            <div className="dropdown-divider"></div>
-                            <a className="dropdown-item" href="https://www.google.com">Something else here</a>
-                        </div>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link disabled" href="https://www.google.com" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <li className="nav-item fk-link">
+                        <Link to="/contato" className="nav-link">CONTATO</Link>
                     </li>
                 </ul>
-                <form className="form-inline my-2 my-lg-0">
-                    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success my-2 my-sm-0" type="submit" href="https://www.google.com">Search</button>
+                <div>
+                    <Link to="/"><img src={Logo} className="img-navbar" alt="Minha Figura" /></Link>
+                </div>
+                <form className="form-inline">
+                    <input className="form-control navbar-fk-form" type="search" placeholder="Search" aria-label="Search" />
+                    <button className="btn btn-outline-success navbar-fk-btn" type="submit" href="https://www.google.com">Search</button>
                 </form>
             </div>
         </nav>

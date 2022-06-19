@@ -1,0 +1,42 @@
+.rodape-container {
+    padding-top: 40px;
+    width: 100%;
+    background-color: #FF0000;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rodape-conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff !important;
+}
+
+.rodape-linkto {
+    color: #fff;
+}
+.rodape-linkto:hover {
+    color: rgb(216, 216, 216);
+}
+
+.rodape-icons-text {
+    margin: 10px;
+    width: 45px;
+}
+
+.rodape-copy {
+    color: #fff;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
