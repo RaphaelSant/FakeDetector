@@ -60,4 +60,14 @@
     .response {
         margin: 10px 0px 20px 0px;
     }
+
+    .navbar-fk-btn {
+        width: 20%;
+        border-radius: 0px 5px 5px 0px;
+    }
+    
+    .navbar-fk-form {
+        width: 80%;
+        border-radius: 5px 0px 0px 5px;
+    }
 }
