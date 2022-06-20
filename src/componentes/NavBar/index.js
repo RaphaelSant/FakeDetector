@@ -22,10 +22,10 @@ function NavBar() {
                         <Link to="/contato" className="nav-link">CONTATO</Link>
                     </li>
                 </ul>
-                <div>
+                <div className="order">
                     <Link to="/"><img src={Logo} className="img-navbar" alt="Minha Figura" /></Link>
                 </div>
-                <form className="form-inline">
+                <form className="form-inline response">
                     <input className="form-control navbar-fk-form" type="search" placeholder="Search" aria-label="Search" />
                     <button className="btn btn-outline-success navbar-fk-btn" type="submit" href="https://www.google.com">Search</button>
                 </form>

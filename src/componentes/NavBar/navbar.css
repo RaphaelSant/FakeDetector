@@ -12,7 +12,8 @@
 
 .nav-link {
     color: #fff !important;
-    transition-duration: 0.3s
+    transition-duration: 0.3s;
+    text-align: center;
 }
 .nav-link:hover {
     color: black !important;
@@ -44,4 +45,19 @@
 
 .navbar-fk-form {
     border-radius: 5px 0px 0px 5px;
+}
+
+@media (max-width: 991px) {
+    .container-navbar {
+        flex-direction: column;
+    }
+    .order {
+        order: -1;
+    }
+    .fk-navbar {
+        margin: 10px 0px 0px 0px;
+    }
+    .response {
+        margin: 10px 0px 20px 0px;
+    }
 }
